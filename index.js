@@ -84,7 +84,6 @@ async function run() {
             const users = await cursor.toArray();
             res.send(users);
         })
-
         app.post('/user', async (req, res) => {
             const user = req.body;
             console.log(user);
